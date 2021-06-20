@@ -4,7 +4,12 @@
       <div class="p-6">
         <a
           href="index.html"
-          class="text-white text-3xl font-semibold uppercase hover:text-gray-300"
+          class="
+            text-white text-3xl
+            font-semibold
+            uppercase
+            hover:text-gray-300
+          "
           >Trindo</a
         >
       </div>
@@ -12,21 +17,48 @@
         <a
           :href="route('dashboard')"
           :active="route().current('dashboard')"
-          class="flex items-center text-white opacity-75 hover:opacity-100 py-4 pl-6 nav-item"
+          class="
+            flex
+            items-center
+            text-white
+            opacity-75
+            hover:opacity-100
+            py-4
+            pl-6
+            nav-item
+          "
           ><i class="fas fa-tachometer-alt mr-3"></i>
           Dashboard
         </a>
         <a
           href="/posts"
           :active="route().current('posts.index')"
-          class="flex items-center text-white opacity-75 hover:opacity-100 py-4 pl-6 nav-item"
+          class="
+            flex
+            items-center
+            text-white
+            opacity-75
+            hover:opacity-100
+            py-4
+            pl-6
+            nav-item
+          "
           ><i class="fas fa-clipboard-list mr-3"></i>
           Post
         </a>
         <a
           href="/"
           :active="route().current('blog.index')"
-          class="flex items-center text-white opacity-75 hover:opacity-100 py-4 pl-6 nav-item"
+          class="
+            flex
+            items-center
+            text-white
+            opacity-75
+            hover:opacity-100
+            py-4
+            pl-6
+            nav-item
+          "
           ><i class="fas fa-globe mr-3"></i>
           Website
         </a>
@@ -44,7 +76,15 @@
               <template #trigger>
                 <button
                   v-if="$page.props.jetstream.managesProfilePhotos"
-                  class="flex text-sm border-2 border-transparent rounded-full focus:outline-none focus:border-gray-300 transition"
+                  class="
+                    flex
+                    text-sm
+                    border-2 border-transparent
+                    rounded-full
+                    focus:outline-none
+                    focus:border-gray-300
+                    transition
+                  "
                 >
                   <img
                     class="h-8 w-8 rounded-full object-cover"
@@ -56,7 +96,22 @@
                 <span v-else class="inline-flex rounded-md">
                   <button
                     type="button"
-                    class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition"
+                    class="
+                      inline-flex
+                      items-center
+                      px-3
+                      py-2
+                      border border-transparent
+                      text-sm
+                      leading-4
+                      font-medium
+                      rounded-md
+                      text-gray-500
+                      bg-white
+                      hover:text-gray-700
+                      focus:outline-none
+                      transition
+                    "
                   >
                     {{ $page.props.user.name }}
 
@@ -112,7 +167,12 @@
       >
         <div class="flex items-center justify-between">
           <a
-            class="text-white text-3xl font-semibold uppercase hover:text-gray-300"
+            class="
+              text-white text-3xl
+              font-semibold
+              uppercase
+              hover:text-gray-300
+            "
             >TRINDO</a
           >
           <!-- <button
@@ -129,21 +189,48 @@
         <a
           :href="route('dashboard')"
           :active="route().current('dashboard')"
-          class="flex items-center text-white opacity-75 hover:opacity-100 py-4 pl-6 nav-item"
+          class="
+            flex
+            items-center
+            text-white
+            opacity-75
+            hover:opacity-100
+            py-4
+            pl-6
+            nav-item
+          "
           ><i class="fas fa-tachometer-alt mr-3"></i>
           Dashboard
         </a>
         <a
           href="/posts"
           :active="route().current('posts.index')"
-          class="flex items-center text-white opacity-75 hover:opacity-100 py-4 pl-6 nav-item"
+          class="
+            flex
+            items-center
+            text-white
+            opacity-75
+            hover:opacity-100
+            py-4
+            pl-6
+            nav-item
+          "
           ><i class="fas fa-clipboard-list mr-3"></i>
           Post
         </a>
         <a
           href="/"
           :active="route().current('blog.index')"
-          class="flex items-center text-white opacity-75 hover:opacity-100 py-4 pl-6 nav-item"
+          class="
+            flex
+            items-center
+            text-white
+            opacity-75
+            hover:opacity-100
+            py-4
+            pl-6
+            nav-item
+          "
           ><i class="fas fa-globe mr-3"></i>
           Website
         </a>
@@ -155,14 +242,14 @@
 
       <div class="w-full overflow-x-hidden border-t flex flex-col">
         <!-- Page Heading -->
-        <header class="bg-white shadow" v-if="$slots.header">
-          <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-            <slot name="header"></slot>
-          </div>
-        </header>
+
         <!-- Page Content -->
-        <main>
-          <slot></slot>
+        <main class="w-full flex-grow p-6">
+          <div class="w-full mt-12">
+            <div class="bg-white overflow-auto">
+              <slot></slot>
+            </div>
+          </div>
         </main>
       </div>
     </div>

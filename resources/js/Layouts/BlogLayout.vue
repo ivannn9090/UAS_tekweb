@@ -3,11 +3,26 @@
     <!-- Top Bar Nav -->
     <nav class="w-full py-4 bg-blue-800 shadow">
       <div
-        class="w-full container mx-auto flex flex-wrap items-center justify-between"
+        class="
+          w-full
+          container
+          mx-auto
+          flex flex-wrap
+          items-center
+          justify-between
+        "
       >
         <nav>
           <ul
-            class="flex items-center justify-between font-bold text-sm text-white uppercase no-underline"
+            class="
+              flex
+              items-center
+              justify-between
+              font-bold
+              text-sm text-white
+              uppercase
+              no-underline
+            "
             v-if="!$page.props.user"
           >
             <li>
@@ -15,12 +30,25 @@
             </li>
           </ul>
           <ul
-            class="flex items-center justify-between font-bold text-sm text-white uppercase no-underline"
+            class="
+              flex
+              items-center
+              justify-between
+              font-bold
+              text-sm text-white
+              uppercase
+              no-underline
+            "
             v-if="$page.props.user"
           >
             <li>
-              <a href="/dashboard">Dashboard</a> <br />
-              <inertia-link href="/logout" method="post">logout</inertia-link>
+              <a class="bg-blue-800" href="/dashboard">Dashboard</a>
+            </li>
+            ||
+            <li>
+              <inertia-link class="bg-blue-800" href="/logout" method="post"
+                >logout</inertia-link
+              >
             </li>
           </ul>
         </nav>
@@ -63,7 +91,17 @@
       <div class="block sm:hidden">
         <a
           href="#"
-          class="block md:hidden text-base font-bold uppercase text-center flex justify-center items-center"
+          class="
+            block
+            md:hidden
+            text-base
+            font-bold
+            uppercase
+            text-center
+            flex
+            justify-center
+            items-center
+          "
           @click="open = !open"
         >
           Topics
@@ -72,7 +110,21 @@
       </div>
       <div class="w-full flex-grow sm:flex sm:items-center sm:w-auto">
         <div
-          class="w-full container mx-auto flex flex-col sm:flex-row items-center justify-center text-sm font-bold uppercase mt-0 px-6 py-2"
+          class="
+            w-full
+            container
+            mx-auto
+            flex flex-col
+            sm:flex-row
+            items-center
+            justify-center
+            text-sm
+            font-bold
+            uppercase
+            mt-0
+            px-6
+            py-2
+          "
         >
           <a href="#" class="hover:bg-gray-400 rounded py-2 px-4 mx-2"
             >Technology</a
@@ -109,22 +161,7 @@
       </section>
 
       <!-- Sidebar Section -->
-      <aside class="w-full md:w-1/3 flex flex-col items-center px-3">
-        <div class="w-full bg-white shadow flex flex-col my-4 p-6">
-          <p class="text-xl font-semibold pb-5">About Us</p>
-          <p class="pb-2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-            mattis est eu odio sagittis tristique. Vestibulum ut finibus leo. In
-            hac habitasse platea dictumst.
-          </p>
-          <a
-            href="#"
-            class="w-full bg-blue-800 text-white font-bold text-sm uppercase rounded hover:bg-blue-700 flex items-center justify-center px-2 py-3 mt-4"
-          >
-            Get to know us
-          </a>
-        </div>
-      </aside>
+      <aside class="w-full md:w-1/3 flex flex-col items-center px-3"></aside>
     </div>
 
     <footer class="w-full border-t bg-white pb-12">
