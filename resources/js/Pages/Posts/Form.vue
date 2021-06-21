@@ -64,12 +64,29 @@
                       {{ $page.props.errors.title }}
                     </div>
                   </div>
-                  <div class="mb-4">
+                  <div class="mb-4" id="app">
                     <label
                       for="exampleFormControlInput2"
                       class="block text-gray-700 text-sm font-bold mb-2"
                       >Body:</label
                     >
+                    <!-- <ckeditor
+                      v-model="form.body"
+                      :config="editorConfig"
+                      class="
+                        shadow
+                        appearance-none
+                        border
+                        rounded
+                        w-full
+                        py-2
+                        px-3
+                        text-gray-700
+                        leading-tight
+                        focus:outline-none
+                        focus:shadow-outline
+                      "
+                    ></ckeditor> -->
                     <textarea
                       name="editor1"
                       class="
@@ -334,8 +351,10 @@
 </template>
 <script>
 import AppLayout from "./../../Layouts/AppLayout";
+
 export default {
   props: ["categories", "post", "statuses"],
+
   components: {
     AppLayout,
   },
@@ -412,5 +431,4 @@ export default {
     },
   },
 };
-CKEDITOR.replace("editor1");
 </script>

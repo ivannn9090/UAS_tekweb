@@ -19,12 +19,14 @@
     <!-- ChartJS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
         integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
-    <script src="https://cdn.ckeditor.com/4.16.1/standard/ckeditor.js"></script>
+
     <script src="https://cdn.jsdelivr.net/gh/alpine-collective/alpine-magic-helpers@0.5.x/dist/component.min.js">
     </script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.3/dist/alpine.min.js" defer></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <!-- ckeditor -->
+
 
 
     <!-- Fonts -->
